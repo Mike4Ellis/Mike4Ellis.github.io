@@ -241,7 +241,7 @@ height:50vh;
     <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(https://source.unsplash.com/collection/145698/800x600)"></div>
+    <div class="site-intro-img" style="background-image: url(https://source.unsplash.com/collection/145698/2560x863)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
@@ -404,7 +404,7 @@ height:50vh;
             <p>原文作者：<a href="http://mike4ellis.github.io">MikeEllis</a>
             </p><p>原文链接：<a href="http://mike4ellis.github.io/2019/04/13/my-third-blog/">http://mike4ellis.github.io/2019/04/13/my-third-blog/</a>
             </p><p>发表日期：<a href="http://mike4ellis.github.io/2019/04/13/my-third-blog/">April 13th 2019, 9:06:54 pm</a>
-            </p><p>更新日期：<a href="http://mike4ellis.github.io/2019/04/13/my-third-blog/">April 15th 2019, 1:50:35 pm</a>
+            </p><p>更新日期：<a href="http://mike4ellis.github.io/2019/04/13/my-third-blog/">April 15th 2019, 2:06:43 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="#">晶の音楽</a>进行洗礼</p>
         </div>
     
@@ -703,7 +703,22 @@ jsonContent:
     
         <script src="/scripts/share.js" async></script>    
      
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
 
 
